@@ -3,6 +3,8 @@ base: golang:1.9-stretch
 lives: { in: /go/src/gerrit.wikimedia.org/r/blubber }
 
 variants:
+  build:
+    base: golang:1.10-stretch
   test:
     runs: { insecurely: true }
     builder:
